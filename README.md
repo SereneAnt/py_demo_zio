@@ -1,10 +1,10 @@
 # py_demo_zio
 
-**Demo: PhoneBook implemented in python and ZIO**
+**PhoneBook demo in python and ZIO**
 
 Basic PhoneBook CRUD logic for demo purpose.
 
-## Python
+## Python Implementation
 
 Requires Python 3.7 ot later
 
@@ -16,7 +16,7 @@ Requires Python 3.7 ot later
 
 ### Workflow example
 
-```python
+```text
 Enter action:
 	c(reate) name number
 	r(ead) [name]
@@ -62,5 +62,14 @@ Enter action:
 	r(ead) [name]
 	u(pdate) name number
 	d(delete) name
+```
 
+## ZIO Implementation
+
+Requires [SBT 1.x](https://www.scala-sbt.org/)
+
+## Running
+
+```bash
+ sbt "runMain iant.zio.demo.PhoneBook"
 ```
