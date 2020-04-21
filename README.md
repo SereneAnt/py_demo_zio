@@ -8,6 +8,8 @@ Basic PhoneBook CRUD logic for demo purpose.
 
 Requires Python 3.7 ot later
 
+The solution is in [phonebook.py](phonebook.py)
+
 ### Running
 
 ```bash
