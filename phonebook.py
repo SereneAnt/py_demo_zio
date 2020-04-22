@@ -9,7 +9,7 @@ class Style:
     RESET = '\033[0m'
 
 
-db = dict()  # Initialize database
+db = {}  # Initialize database
 
 
 def __colored(s: str, color: str = Style.BLUE) -> str:
@@ -34,8 +34,7 @@ def __run_cmd(command: str):
     cmd, *tail = command.split(" ")
 
     if 'create'.startswith(cmd):
-        name, number = tail
-        __create(name, number)
+        __create(*tail)
     elif 'read'.startswith(cmd):
         if tail:
             __read(tail[0])
